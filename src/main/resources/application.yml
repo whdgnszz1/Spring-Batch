@@ -1,6 +1,15 @@
+server:
+  port: 8081
+
 spring:
   datasource:
+    batch:
       url: jdbc:mysql://localhost:3306/batch
+      username: root
+      password: test
+
+    streaming:
+      url: jdbc:mysql://localhost:3306/streaming
       username: root
       password: test
 
