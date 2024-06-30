@@ -28,6 +28,7 @@ public class DemoController {
 
     @Autowired
     PlatformTransactionManager platformTransactionManager;
+
     @GetMapping("/job")
     public String runJob() throws JobInstanceAlreadyCompleteException, JobExecutionAlreadyRunningException, JobParametersInvalidException, JobRestartException {
         jobLauncher.run(
